@@ -40,3 +40,35 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+let navItems = document.querySelector('nav')
+navItems.children[0].innerHTML = siteContent["nav"]["nav-item-1"]
+navItems.children[1].innerHTML = siteContent["nav"]["nav-item-2"]
+navItems.children[2].innerHTML = siteContent["nav"]["nav-item-3"]
+navItems.children[3].innerHTML = siteContent["nav"]["nav-item-4"]
+navItems.children[4].innerHTML = siteContent["nav"]["nav-item-5"]
+navItems.children[5].innerHTML = siteContent["nav"]["nav-item-6"]
+let sectionCta = document.querySelector(".cta")
+sectionCta.querySelector(".cta-text h1").innerHTML = siteContent["cta"]["h1"]
+sectionCta.querySelector("div button").innerHTML = siteContent["cta"]["button"]
+sectionCta.querySelector("img").setAttribute("src", siteContent["cta"]["img-src"])
+let sectionMain = document.querySelector(".main-content")
+let topContent = sectionMain.querySelector(".top-content")
+topContent.children[1].querySelector("h4").innerHTML = siteContent["main-content"]["about-h4"]
+topContent.children[1].querySelector("p").innerHTML = siteContent["main-content"]["about-content"]
+topContent.children[0].querySelector("h4").innerHTML = siteContent["main-content"]["features-h4"]
+topContent.children[0].querySelector("p").innerHTML = siteContent["main-content"]["features-content"]
+sectionMain.querySelector(".middle-img").setAttribute("src", siteContent["main-content"]["middle-img-src"])
+let bottomContent = sectionMain.querySelector(".bottom-content")
+bottomContent.children[0].querySelector("h4").innerHTML = siteContent["main-content"]["product-h4"]
+bottomContent.children[0].querySelector("p").innerHTML = siteContent["main-content"]["product-content"]
+bottomContent.children[1].querySelector("h4").innerHTML = siteContent["main-content"]["services-h4"]
+bottomContent.children[1].querySelector("p").innerHTML = siteContent["main-content"]["services-content"]
+bottomContent.children[2].querySelector("h4").innerHTML = siteContent["main-content"]["vision-h4"]
+bottomContent.children[2].querySelector("p").innerHTML = siteContent["main-content"]["vision-content"]
+let selectionContact = document.querySelector(".contact")
+selectionContact.querySelector("h4").innerHTML = siteContent["contact"]["contact-h4"]
+selectionContact.children[1].innerHTML = siteContent["contact"]["address"]
+selectionContact.children[2].innerHTML = siteContent["contact"]["phone"]
+selectionContact.children[3].innerHTML = siteContent["contact"]["email"]
+let footer = document.querySelector("footer")
+footer.querySelector("p").innerHTML = siteContent["footer"]["copyright"]
